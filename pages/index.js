@@ -2,11 +2,15 @@ import Image from 'next/image';
 import Form from '../components/Form';
 import Header from '../components/header'
 import SocialMedia from '../components/socialMedia'
+import Head from 'next/head'
 
 export default function Home() {
 
   return (
     <>
+    <Head>
+      <title>Roke Services - Simple Solutions</title>
+    </Head>
       <div className="coming-soon dark:bg-slate-800">
         <div className="coming-soon__wrapper">
           <div className="coming-soon__header">
