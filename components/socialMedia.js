@@ -3,8 +3,8 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp, FaYoutube }
 const SocialMedia = () => {
   return (
     <div className="mt-7 lg:mt-12">
-        <div className="text-roke-black font-medium">Follow us on social media</div>
-        <div className="grid max-w-[300px] mt-5 grid-cols-3 gap-4 mx-auto lg:mx-0">
+        <div className="text-roke-black font-medium dark:text-gray-50">Follow us on social media</div>
+        <div className="grid max-w-[150px] mt-5 grid-cols-3 gap-4 mx-auto lg:mx-0 justify-items-center">
           <a href="https://www.facebook.com/" className="bg-facebook socialBtn facebook"><FaFacebook/></a>
           {/* <a href="https://twitter.com/" className="bg-twitter pt-[2px] text-[15px] socialBtn twitter"><FaTwitter/></a> */}
           <a href="https://www.instagram.com/" className="bg-instagram socialBtn instagram"><FaInstagram/></a>

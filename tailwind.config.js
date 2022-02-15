@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'roke-dark': '#3F3D56',
         'roke-black': '#14142b',
         'roke-red': '#F50057',
         'roke-light': '#FB99BC',
