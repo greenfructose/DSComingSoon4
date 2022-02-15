@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply m-0 p-0 bottom-0
+    }
+    body {
+        font-family: "Montserrat";
+        @apply text-lg leading-[1.667em]
+    }
+}
+
+@layer components {
+    .coming-soon { @apply overflow-hidden p-0 }
+    .coming-soon__wrapper {@apply overflow-hidden min-h-screen px-0 pt-0 items-center }
+    .coming-soon__header { @apply max-w-6xl mx-auto px-6 }
+    .coming-soon__form { @apply flex flex-col md:flex-row w-full md:w-full max-w-full md:space-x-3 space-y-3 md:space-y-0 justify-center }
+    .coming-soon__form-input { @apply py-4 px-6 rounded-full border-transparent flex-1 appearance-none border border-gray-400 w-full bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-roke-red focus:border-transparent }
+    .coming-soon__form-btn { @apply flex-shrink-0 px-7 py-4 text-base font-semibold text-white bg-roke-red rounded-full shadow-md border-0 hover:bg-red-700 focus:outline-none }
+    .success__message { @apply mt-5 rounded-2xl bg-roke-red text-white font-medium p-5 text-center hidden }
+    .error__message { @apply mt-7 p-5 rounded-2xl bg-error text-roke-red hidden }
+    .section { @apply max-w-7xl mx-auto px-6 }
+    .section__wrapper { @apply grid w-full max-w-full gap-4 grid-cols-1 lg:grid-cols-2 }
+    .section__description { @apply col-start-1 row-start-1 col-end-1 row-end-1 justify-self-center text-center lg:justify-self-start lg:text-left z-[1] max-w-lg }
+    .section__title { @apply  mt-0 mb-6 text-roke-black text-3xl lg:text-5xl leading-[1.25] font-bold tracking-tighter}
+    .section__text { @apply mb-5 text-roke-text mt-0 }
+    
+    .sticky { @apply fixed text-black bg-white py-3 shadow-sm }
+    /* Socials */
+    .socialBtn {
+        @apply flex w-9 min-h-[36px] justify-center items-center rounded-full text-white no-underline;
+        transition: transform 200ms ease, -webkit-transform 200ms ease;
+    }
+    .facebook {
+        box-shadow: 0 6px 8.5px 0 rgba(21, 116, 239, 0.2);
+    }
+    .twitter {
+        box-shadow: 0 6px 8.5px 0 rgb(27 186 255 / 27%);
+        font-size: 15px;
+    }
+    .instagram {
+        background-image: radial-gradient(circle farthest-side at 28% 100%, #fa8f21 16%, #eb2482 83%);
+        box-shadow: 0 6px 8.5px 0 rgb(251 15 90 / 14%);
+        font-size: 20px;
+    }
+    .linkedin {
+        box-shadow: 0 6px 8.5px 0 rgba(21, 126, 231, 0.34);
+    }
+    .youtube {
+        box-shadow: 0 6px 8.5px 0 rgb(255 0 0 / 20%);
+        font-size: 15px;
+    }
+    .whatsapp {
+        box-shadow: 0 6px 8.5px 0 rgb(84 228 71 / 20%);
+        font-size: 20px;
+    }
+}
