@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="coming-soon dark:bg-slate-800">
+      <div className="coming-soon dark:bg-slate-400">
         <div className="coming-soon__wrapper">
 
           
