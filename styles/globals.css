@@ -16,13 +16,13 @@
     .coming-soon { @apply overflow-hidden p-0 }
     .coming-soon__wrapper {@apply flex overflow-hidden min-h-screen px-0 pt-0 justify-center items-center }
     .coming-soon__header { @apply max-w-6xl lg:max-w-7xl mx-auto }
-    .coming-soon__form { @apply flex flex-col md:flex-row w-full md:w-full max-w-full md:space-x-3 space-y-3 md:space-y-0 justify-center }
-    .coming-soon__form-input { @apply py-4 px-6 rounded-full border-transparent flex-1 appearance-none border border-gray-400 w-full bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-roke-red focus:border-transparent }
-    .coming-soon__form-btn { @apply flex-shrink-0 px-7 py-4 text-base font-semibold text-white bg-roke-red rounded-full shadow-md border-0 hover:bg-red-700 focus:outline-none }
+    .coming-soon__form { @apply w-full max-w-xs space-y-3 justify-center }
+    .coming-soon__form-input { @apply py-4 px-6 rounded-lg border-transparent flex-1 appearance-none border border-gray-400 w-full bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-transparent }
+    .coming-soon__form-btn { @apply flex-shrink-0 px-7 py-4 text-base font-semibold text-white bg-lime-500 rounded-full shadow-md border-0 hover:bg-cyan-900 focus:outline-none }
     .success__message { @apply mt-5 rounded-2xl bg-whatsapp text-roke-black font-medium p-4 text-center }
     .error__message { @apply mt-7 p-40 rounded-2xl bg-error text-roke-red }
     .section { @apply max-w-7xl mx-auto px-6 }
-    .section__wrapper { @apply grid w-full max-w-full gap-4 grid-cols-1 lg:grid-cols-2 }
+    .section__wrapper { @apply grid w-full max-w-full gap-4 grid-cols-1 lg:grid-cols-2 justify-center}
     .section__description { @apply col-start-1 row-start-1 col-end-1 row-end-1 justify-self-center text-center lg:justify-self-start lg:text-left z-[1] max-w-lg }
     .section__title { @apply  mt-0 mb-6 text-roke-black text-3xl lg:text-5xl leading-8 font-bold tracking-[-0.02em]}
     .section__text { @apply mb-5 text-roke-text mt-0 }

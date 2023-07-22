@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp, FaYoutube }
 
 const SocialMedia = () => {
   return (
-    <div className="mt-7 lg:mt-12">
+    <div className="mt-7 mb-7 lg:mt-12">
         <div className="text-roke-black font-medium dark:text-gray-50">Follow us on social media</div>
         <div className="grid max-w-[150px] mt-5 grid-cols-3 gap-4 mx-auto lg:mx-0 justify-items-center">
           <a href="https://www.facebook.com/" className="bg-facebook socialBtn facebook"><FaFacebook/></a>

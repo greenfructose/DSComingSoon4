@@ -4,7 +4,7 @@ import {CgDanger} from 'react-icons/cg'
 const Form = () => {
   const [email, setEmail] = useState("")
   const [errors, setErrors] = useState({})
-  const [buttonText, setButtonText] = useState("Subscribe")
+  const [buttonText, setButtonText] = useState("Submit")
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
   const [showErrorMessage, setShowErrorMessage] = useState(false)
 
@@ -64,7 +64,13 @@ const Form = () => {
     <div className="mt-8 mb-0 mx-0">
       <form onSubmit={handleSubmit} className="coming-soon__form">
         {errors?.email && (<p className="text-roke-red align-middle">Correct email required <CgDanger style={{display: 'inline-block'}}/></p>)}
+        <div>
+        <input type="text" value={email} onChange={(e) => {setEmail(e.target.value)}} className="coming-soon__form-input" placeholder="Name"/>
+        </div>
+        <div>
         <input type="text" value={email} onChange={(e) => {setEmail(e.target.value)}} className="coming-soon__form-input" placeholder="Email"/>
+        </div>
+        <textarea rows="4" className="coming-soon__form-input" placeholder="Reason"></textarea>
         <button className="coming-soon__form-btn" type="submit">
           {buttonText}
         </button>
