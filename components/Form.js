@@ -42,7 +42,7 @@ const Form = () => {
 
     if (isValidForm) {
       setButtonText("Sending...")
-      const response = await fetch('https://formsubmit.co/a788eb697682dd4c661bb82c2b232fba', {
+      const response = await fetch('https://formsubmit.co/2e251fa3e0b8e1aa6681887c2669c2bb', {
         body: JSON.stringify({
           name: name,
           email: email,
@@ -53,8 +53,6 @@ const Form = () => {
         },
         method: "POST",
       })
-
-      const { error } = await response.json()
 
       setShowSuccessMessage(true)
       setShowErrorMessage(false)
@@ -86,7 +84,7 @@ const Form = () => {
 
       {showSuccessMessage && (
       <div className="success__message" role="region" aria-label="Coming Soon Form success">
-        <div>Thanks. We will notify you once we launch.</div>
+        <div>Thanks. We will reach out to you as soon as possible.</div>
       </div>
       )}
       {showErrorMessage && (
